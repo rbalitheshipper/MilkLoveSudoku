@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MilkLove Sudoku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <img id="logo" src="images/MUVOKU.png" alt="MilkLove mascot">
+      <div>
+        <h1>MilkLove Sudoku</h1><small>greenpink fan-made puzzle</small>
+      </div>
+    </header>
+    <div class="tabs" id="tabs">
+      <button data-d="easy" class="on">Easy</button><button data-d="medium">Medium</button><button
+        data-d="hard">Hard</button>
+    </div>
+    <div class="stats">
+      <div>Mistakes <b id="mc">0/3</b> <span id="hearts"></span></div>
+      <div>Time <b id="tm">0:00</b> <button id="pause" title="Pause (P)" aria-label="Pause">⏸</button></div>
+    </div>
+    <div id="board"></div>
+    <div class="tools">
+      <button id="undo">↶ Undo</button><button id="erase">⌫ Erase</button><button id="notes">✎ Notes:
+        off</button><button id="newg">New</button>
+    </div>
+    <div id="pad"></div>
+    <footer> @rbalitheshipper</footer>
+  </main>
+  <div id="ov">
+    <div class="box" id="ovbox"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+
+</html>
